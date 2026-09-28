@@ -1,0 +1,625 @@
+.about-page-hero {
+  width: 100%;
+  padding: 75px 0;
+
+  background: #fdf8f8;
+}
+
+.about-page-hero-container {
+  width: 94%;
+  max-width: 1180px;
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 65px;
+  align-items: center;
+}
+
+.about-page-hero-content {
+  max-width: 500px;
+}
+
+.about-page-label,
+.about-page-small-title {
+  margin-bottom: 12px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c79a2e;
+}
+
+.about-page-hero h1 {
+  margin-bottom: 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.about-page-hero h1 span {
+  display: block;
+  color: #c79a2e;
+}
+
+.about-page-hero-content > p:last-child {
+  max-width: 450px;
+
+  font-size: 13px;
+  line-height: 1.8;
+
+  color: #707070;
+}
+
+.about-page-hero-image {
+  height: 390px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  border: 1px solid #eee8dc;
+}
+
+.about-page-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   WHO WE ARE
+========================= */
+
+.about-who-section {
+  padding: 95px 0;
+
+  background: #ffffff;
+}
+
+.about-who-container {
+  width: 94%;
+  max-width: 1180px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 75px;
+
+  align-items: center;
+}
+
+.about-who-image {
+  position: relative;
+
+  height: 470px;
+}
+
+.about-who-image img {
+  width: 90%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.about-experience-card {
+  position: absolute;
+
+  right: 0;
+  bottom: 35px;
+
+  padding: 18px 22px;
+
+  background: #ffffff;
+
+  border-left: 3px solid #c79a2e;
+
+  box-shadow: 0 12px 30px rgba(31, 31, 31, 0.1);
+}
+
+.about-experience-card strong {
+  display: block;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+
+  color: #1f1f1f;
+}
+
+.about-experience-card span {
+  font-size: 9px;
+
+  color: #888;
+}
+
+.about-who-content h2,
+.about-philosophy-header h2,
+.about-modern-content h2 {
+  margin-bottom: 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.about-who-content h2 span,
+.about-philosophy-header h2 span,
+.about-modern-content h2 span {
+  display: block;
+
+  color: #c79a2e;
+}
+
+.about-who-content > p {
+  margin-bottom: 15px;
+
+  font-size: 12px;
+  line-height: 1.9;
+
+  color: #707070;
+}
+
+
+/* CHECK LIST */
+
+.about-check-list {
+  margin-top: 25px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 13px;
+}
+
+.about-check-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 10px;
+
+  color: #444;
+}
+
+.about-check-icon {
+  width: 23px;
+  height: 23px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9e6c8;
+
+  color: #c79a2e;
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.about-philosophy-section {
+  padding: 90px 0;
+
+  background: #fdf8f8;
+}
+
+.about-philosophy-container {
+  width: 94%;
+  max-width: 1180px;
+
+  margin: auto;
+}
+
+.about-philosophy-header {
+  max-width: 650px;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+.about-philosophy-header h2 {
+  margin-bottom: 15px;
+}
+
+.about-philosophy-header > p:last-child {
+  font-size: 12px;
+  line-height: 1.8;
+
+  color: #777;
+}
+
+
+/* VALUES */
+
+.about-values-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.about-value-card {
+  padding: 27px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #eee8dc;
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.about-value-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #c79a2e;
+
+  box-shadow: 0 15px 30px rgba(31, 31, 31, 0.06);
+}
+
+.about-value-icon {
+  width: 43px;
+  height: 43px;
+
+  margin-bottom: 17px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9e6c8;
+
+  color: #c79a2e;
+}
+
+.about-value-card h3 {
+  margin-bottom: 8px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  color: #1f1f1f;
+}
+
+.about-value-card p {
+  font-size: 10px;
+
+  line-height: 1.7;
+
+  color: #777;
+}
+
+
+/* =========================
+   MODERN CARE
+========================= */
+
+.about-modern-section {
+  padding: 95px 0;
+
+  background: #ffffff;
+}
+
+.about-modern-container {
+  width: 94%;
+  max-width: 1180px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.about-modern-content > p {
+  max-width: 500px;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+
+  color: #777;
+}
+
+.about-modern-points {
+  margin: 25px 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.about-modern-points div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 10px;
+
+  color: #444;
+}
+
+.about-modern-points svg {
+  color: #c79a2e;
+}
+
+.about-page-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  background: #c79a2e;
+
+  border-radius: 20px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.about-page-button:hover {
+  background: #a97d18;
+
+  transform: translateY(-2px);
+}
+
+.about-modern-image {
+  position: relative;
+
+  height: 430px;
+}
+
+.about-modern-image img {
+  width: 90%;
+  height: 100%;
+
+  margin-left: auto;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.about-modern-accent {
+  position: absolute;
+
+  width: 75%;
+  height: 80%;
+
+  right: 0;
+  bottom: -15px;
+
+  background: #e9e6c8;
+
+  border-radius: 10px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta-section {
+  padding: 55px 0;
+
+  background: #1f1f1f;
+}
+
+.about-cta-container {
+  width: 94%;
+  max-width: 1180px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.about-cta-container p {
+  margin-bottom: 7px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+
+  color: #c79a2e;
+}
+
+.about-cta-container h2 {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 27px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+.about-cta-container h2 span {
+  color: #c79a2e;
+}
+
+.about-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 12px 18px;
+
+  flex-shrink: 0;
+
+  background: #c79a2e;
+
+  border-radius: 20px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.about-cta-button:hover {
+  background: #a97d18;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .about-page-hero-container,
+  .about-who-container,
+  .about-modern-container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .about-page-hero-content {
+    max-width: 650px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-modern-image {
+    height: 380px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-page-hero,
+  .about-who-section,
+  .about-philosophy-section,
+  .about-modern-section {
+    padding: 65px 0;
+  }
+
+  .about-page-hero-container,
+  .about-who-container,
+  .about-modern-container,
+  .about-philosophy-container {
+    width: 90%;
+  }
+
+  .about-page-hero h1 {
+    font-size: 35px;
+  }
+
+  .about-page-hero-image {
+    height: 280px;
+  }
+
+  .about-who-image {
+    height: 350px;
+  }
+
+  .about-who-image img {
+    width: 100%;
+  }
+
+  .about-experience-card {
+    right: 10px;
+  }
+
+  .about-who-content h2,
+  .about-philosophy-header h2,
+  .about-modern-content h2 {
+    font-size: 30px;
+  }
+
+  .about-check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-modern-image {
+    height: 300px;
+  }
+
+  .about-cta-container {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}

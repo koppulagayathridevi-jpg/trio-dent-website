@@ -1,0 +1,510 @@
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+.services-page-hero {
+  width: 100%;
+  padding: 75px 0;
+  background: #fdf8f8;
+}
+
+.services-page-hero-container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+
+  align-items: center;
+}
+
+.services-page-hero-content {
+  max-width: 520px;
+}
+
+.services-page-label,
+.services-page-small-title {
+  margin-bottom: 13px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c79a2e;
+}
+
+.services-page-hero-content h1 {
+  margin-bottom: 20px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  line-height: 1.12;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.services-page-hero-content h1 span {
+  display: block;
+  color: #c79a2e;
+}
+
+.services-page-hero-content > p {
+  margin-bottom: 28px;
+
+  font-size: 12px;
+  line-height: 1.9;
+
+  color: #777;
+}
+
+.services-page-hero-button,
+.services-page-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 19px;
+
+  background: #c79a2e;
+  color: #ffffff;
+
+  border-radius: 25px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.services-page-hero-button:hover,
+.services-page-cta-button:hover {
+  background: #a97d18;
+  transform: translateY(-2px);
+}
+
+
+/* HERO IMAGE */
+
+.services-page-hero-image {
+  position: relative;
+}
+
+.services-page-hero-image img {
+  width: 100%;
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.services-page-image-card {
+  position: absolute;
+
+  left: -25px;
+  bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 15px 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #eee8dc;
+
+  border-radius: 8px;
+
+  box-shadow: 0 15px 35px rgba(31, 31, 31, 0.1);
+
+  color: #c79a2e;
+}
+
+.services-page-image-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.services-page-image-card strong {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  color: #1f1f1f;
+}
+
+.services-page-image-card span {
+  font-size: 9px;
+  color: #888;
+}
+
+
+/* =========================================
+   SERVICES LIST
+========================================= */
+
+.services-page-list {
+  width: 100%;
+  padding: 90px 0;
+
+  background: #ffffff;
+}
+
+.services-page-container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-page-header {
+  max-width: 600px;
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.services-page-header h2,
+.services-page-why-content h2 {
+  margin-bottom: 15px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.services-page-header h2 span,
+.services-page-why-content h2 span {
+  display: block;
+  color: #c79a2e;
+}
+
+.services-page-header > p:last-child,
+.services-page-why-content > p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #777;
+}
+
+
+/* SERVICE GRID */
+
+.services-page-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.services-page-card {
+  position: relative;
+
+  padding: 30px 25px;
+
+  background: #fdf8f8;
+
+  border: 1px solid #eee8dc;
+
+  border-radius: 9px;
+
+  transition: all 0.3s ease;
+}
+
+.services-page-card:hover {
+  background: #ffffff;
+
+  border-color: #c79a2e;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 18px 40px rgba(31, 31, 31, 0.07);
+}
+
+.services-page-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 50%;
+
+  background: #e9e6c8;
+
+  color: #c79a2e;
+}
+
+.services-page-card-number {
+  position: absolute;
+
+  top: 24px;
+  right: 23px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #d5d0bc;
+}
+
+.services-page-card h3 {
+  margin-bottom: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.services-page-card p {
+  margin-bottom: 20px;
+
+  font-size: 10px;
+  line-height: 1.8;
+
+  color: #777;
+}
+
+.services-page-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  color: #c79a2e;
+
+  transition: 0.3s ease;
+}
+
+.services-page-card a:hover {
+  gap: 9px;
+}
+
+
+/* =========================================
+   WHY SECTION
+========================================= */
+
+.services-page-why {
+  padding: 90px 0;
+
+  background: #fdf8f8;
+}
+
+.services-page-why-container {
+  width: 92%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.services-page-why-image {
+  position: relative;
+}
+
+.services-page-why-image img {
+  width: 100%;
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.services-page-why-content {
+  max-width: 500px;
+}
+
+.services-page-why-content > p {
+  margin-bottom: 22px;
+}
+
+
+/* BENEFITS */
+
+.services-page-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+.services-page-benefit {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 9px;
+  color: #555;
+}
+
+.services-page-benefit-icon {
+  width: 25px;
+  height: 25px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9e6c8;
+
+  color: #c79a2e;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.services-page-cta {
+  padding: 65px 0;
+
+  background: #1f1f1f;
+}
+
+.services-page-cta-container {
+  width: 92%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.services-page-cta-container p {
+  margin-bottom: 10px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c79a2e;
+}
+
+.services-page-cta-container h2 {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 28px;
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+.services-page-cta-container h2 span {
+  display: block;
+  color: #c79a2e;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .services-page-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .services-page-hero-content {
+    max-width: 650px;
+  }
+
+  .services-page-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-page-why-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .services-page-why-content {
+    max-width: 650px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .services-page-hero {
+    padding: 55px 0;
+  }
+
+  .services-page-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .services-page-hero-image img {
+    height: 300px;
+  }
+
+  .services-page-image-card {
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .services-page-list,
+  .services-page-why {
+    padding: 65px 0;
+  }
+
+  .services-page-header h2,
+  .services-page-why-content h2 {
+    font-size: 30px;
+  }
+
+  .services-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page-cta-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services-page-cta-container h2 {
+    font-size: 24px;
+  }
+
+}

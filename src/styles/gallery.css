@@ -1,0 +1,516 @@
+/* =========================================
+   GALLERY SECTION
+========================================= */
+
+.gallery-section {
+  width: 100%;
+  padding: 90px 0 100px;
+  background: #fdf8f8;
+}
+
+.gallery-container {
+  width: min(90%, 1180px);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.gallery-header {
+  width: min(100%, 720px);
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.gallery-small-title {
+  margin: 0 0 11px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+
+  color: #c79a2e;
+}
+
+.gallery-heading h2 {
+  margin: 0 0 16px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 39px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.gallery-heading h2 span {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 0.72em;
+  line-height: 1.25;
+
+  color: #c79a2e;
+}
+
+.gallery-description {
+  max-width: 620px;
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 1.9;
+
+  color: #777;
+}
+
+
+/* =========================================
+   GALLERY GRID
+========================================= */
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* =========================================
+   GALLERY CARD
+========================================= */
+
+.gallery-card {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eee5d5;
+  border-radius: 9px;
+
+  box-shadow: 0 8px 25px rgba(31, 31, 31, 0.045);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #dfcfaa;
+
+  box-shadow: 0 18px 38px rgba(31, 31, 31, 0.08);
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.gallery-card-image {
+  position: relative;
+
+  width: 100%;
+  height: 270px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #fafafa;
+
+  border-bottom: 1px solid #eee8dc;
+}
+
+.gallery-card-image img {
+  width: 100%;
+  height: 100%;
+
+  /*
+    Important:
+    contain keeps your actual
+    before/after artwork visible.
+  */
+  object-fit: contain;
+
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-card-image img {
+  transform: scale(1.025);
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.gallery-card-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(31, 31, 31, 0.15);
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-card-overlay {
+  opacity: 1;
+}
+
+
+/* =========================================
+   VIEW ICON
+========================================= */
+
+.gallery-view {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #c79a2e;
+
+  transform: scale(0.8);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .gallery-view {
+  transform: scale(1);
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.gallery-card-number {
+  position: absolute;
+
+  top: 13px;
+  right: 13px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+
+  color: #c79a2e;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.gallery-card-content {
+  min-height: 145px;
+
+  padding: 21px 21px 22px;
+}
+
+.gallery-category {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+
+  color: #c79a2e;
+}
+
+.gallery-card-content h3 {
+  margin: 0 0 8px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.gallery-card-content p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  line-height: 1.75;
+
+  color: #777;
+}
+
+
+/* =========================================
+   BOTTOM AREA
+========================================= */
+
+.gallery-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 45px;
+  padding-top: 28px;
+
+  border-top: 1px solid #eee8dc;
+}
+
+.gallery-bottom-text span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+
+  color: #c79a2e;
+}
+
+.gallery-bottom-text p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  line-height: 1.6;
+
+  color: #888;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.gallery-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  padding: 12px 21px;
+
+  border-radius: 24px;
+
+  background: #c79a2e;
+  color: #ffffff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gallery-button:hover {
+  background: #a97d18;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(199, 154, 46, 0.22);
+}
+
+.gallery-button svg {
+  transition: transform 0.3s ease;
+}
+
+.gallery-button:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .gallery-section {
+    padding: 80px 0 85px;
+  }
+
+  .gallery-container {
+    width: 90%;
+  }
+
+  .gallery-grid {
+    gap: 20px;
+  }
+
+  .gallery-card-image {
+    height: 245px;
+  }
+
+  .gallery-card-content {
+    padding: 19px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 750px) {
+
+  .gallery-section {
+    padding: 70px 0 75px;
+  }
+
+  .gallery-header {
+    margin-bottom: 40px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+  .gallery-card-image {
+    height: 240px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .gallery-section {
+    padding: 60px 0 65px;
+  }
+
+  .gallery-container {
+    width: 90%;
+  }
+
+  .gallery-small-title {
+    font-size: 7.5px;
+    letter-spacing: 1.8px;
+  }
+
+  .gallery-heading h2 {
+    font-size: 29px;
+  }
+
+  .gallery-description {
+    font-size: 9px;
+    line-height: 1.8;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+  }
+
+  .gallery-card-image {
+    height: 250px;
+  }
+
+  .gallery-card-content {
+    min-height: auto;
+
+    padding: 18px 18px 20px;
+  }
+
+  .gallery-card-content h3 {
+    font-size: 15px;
+  }
+
+  .gallery-card-content p {
+    font-size: 8.5px;
+  }
+
+  .gallery-bottom {
+    display: block;
+
+    margin-top: 32px;
+    padding-top: 23px;
+  }
+
+  .gallery-bottom-text {
+    margin-bottom: 20px;
+  }
+
+  .gallery-button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .gallery-heading h2 {
+    font-size: 26px;
+  }
+
+  .gallery-card-image {
+    height: 225px;
+  }
+
+}

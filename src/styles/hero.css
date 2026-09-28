@@ -1,0 +1,436 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+  width: 100%;
+  background: #fdf8f8;
+  overflow: hidden;
+}
+
+.hero-container {
+  width: 94%;
+  max-width: 1280px;
+  min-height: 480px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 48% 52%;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.hero-content {
+  padding: 65px 20px 65px 30px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-small-title {
+  margin-bottom: 14px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #c79a2e;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(38px, 4.3vw, 58px);
+
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.hero h1 span {
+  display: block;
+  color: #c79a2e;
+}
+
+.hero-description {
+  max-width: 430px;
+
+  margin-top: 18px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  color: #5f5f5f;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.hero-book-button,
+.hero-services-button {
+  min-height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 17px;
+
+  border-radius: 20px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.hero-book-button {
+  background: #c79a2e;
+  color: #ffffff;
+
+  box-shadow: 0 5px 15px rgba(199, 154, 46, 0.18);
+}
+
+.hero-book-button:hover {
+  background: #aa7d18;
+  transform: translateY(-2px);
+}
+
+.hero-services-button {
+  border: 1px solid #d6c8aa;
+  color: #333333;
+  background: #ffffff;
+}
+
+.hero-services-button:hover {
+  color: #c79a2e;
+  border-color: #c79a2e;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.hero-image-area {
+  position: relative;
+
+  height: 480px;
+
+  overflow: hidden;
+}
+
+
+/* Soft background */
+
+.hero-image-background {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -100px;
+  top: -60px;
+
+  border-radius: 50%;
+
+  background: #e9e6c8;
+}
+
+
+/* Main image */
+
+.hero-image {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 2;
+
+  /* Soft curved left edge */
+  border-radius: 55% 0 0 55%;
+}
+
+
+/* Gold decorative shape */
+
+.hero-image-decoration {
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -60px;
+  bottom: -60px;
+
+  border-radius: 50%;
+
+  background: #c79a2e;
+
+  opacity: 0.15;
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .hero-content {
+    text-align: center;
+
+    padding: 55px 20px 35px;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image-area {
+    height: 420px;
+  }
+
+  .hero-image {
+    border-radius: 0;
+  }
+
+  .hero-image-background {
+    right: 10%;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+  .hero-container {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding: 45px 20px 30px;
+  }
+
+  .hero-small-title {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-description {
+    font-size: 11px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-book-button,
+  .hero-services-button {
+    width: 100%;
+  }
+
+  .hero-image-area {
+    height: 330px;
+  }
+
+  .hero-image-background {
+    width: 330px;
+    height: 330px;
+
+    right: -50px;
+    top: 0;
+  }
+}
+/* =========================================
+   4 IMAGE HERO SHOWCASE
+========================================= */
+
+.hero-showcase {
+  position: relative;
+  width: 100%;
+  height: 390px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background: #e9e6c8;
+
+  padding: 18px 0 18px 18px;
+}
+
+.hero-showcase-track {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  height: 100%;
+
+  width: max-content;
+
+  animation: heroImageMove 18s linear infinite;
+}
+
+.showcase-image {
+  width: 190px;
+  height: 320px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  border: 2px solid rgba(199, 154, 46, 0.35);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 30px rgba(40, 30, 10, 0.12);
+}
+
+.showcase-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* Main image */
+
+.showcase-main {
+  width: 225px;
+  height: 350px;
+
+  border-color: #c79a2e;
+
+  box-shadow:
+    0 18px 40px rgba(40, 30, 10, 0.18);
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes heroImageMove {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-420px);
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero-showcase {
+    height: 350px;
+  }
+
+  .showcase-image {
+    width: 160px;
+    height: 290px;
+  }
+
+  .showcase-main {
+    width: 190px;
+    height: 320px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+  .hero-showcase {
+    height: 300px;
+
+    padding-left: 12px;
+  }
+
+  .showcase-image {
+    width: 135px;
+    height: 245px;
+
+    border-radius: 10px;
+  }
+
+  .showcase-main {
+    width: 155px;
+    height: 270px;
+  }
+
+}

@@ -1,0 +1,731 @@
+.appointment-section {
+  width: 100%;
+  padding: 90px 0;
+  background: #fdf8f8;
+}
+
+.appointment-container {
+  width: 94%;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+  align-items: center;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.appointment-info {
+  padding-right: 20px;
+}
+
+.appointment-small-title {
+  margin-bottom: 12px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c79a2e;
+}
+
+.appointment-info h2 {
+  margin-bottom: 18px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.appointment-info h2 span {
+  display: block;
+  color: #c79a2e;
+}
+
+.appointment-description {
+  max-width: 470px;
+
+  margin-bottom: 32px;
+
+  font-size: 13px;
+  line-height: 1.8;
+
+  color: #6c6c6c;
+}
+
+
+/* DETAILS */
+
+.appointment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.appointment-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.appointment-detail-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9e6c8;
+  color: #c79a2e;
+}
+
+.appointment-detail h3 {
+  margin-bottom: 3px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.appointment-detail p {
+  font-size: 11px;
+  color: #777;
+}
+
+
+/* CALL BOX */
+
+.appointment-call-box {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #eee8dc;
+  border-radius: 8px;
+}
+
+.appointment-call-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #c79a2e;
+  color: #ffffff;
+}
+
+.appointment-call-box span {
+  display: block;
+
+  margin-bottom: 2px;
+
+  font-size: 9px;
+  color: #888;
+}
+
+.appointment-call-box a {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.appointment-form-card {
+  padding: 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #eee8dc;
+  border-radius: 12px;
+
+  box-shadow: 0 15px 40px rgba(31, 31, 31, 0.06);
+}
+
+.appointment-form-header {
+  margin-bottom: 25px;
+}
+
+.appointment-form-header p {
+  margin-bottom: 8px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  color: #c79a2e;
+}
+
+.appointment-form-header h3 {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.appointment-form-header h3 span {
+  color: #c79a2e;
+}
+
+
+/* FORM */
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.appointment-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.appointment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.appointment-field label {
+  font-size: 10px;
+  font-weight: 600;
+
+  color: #444;
+}
+
+.appointment-field input,
+.appointment-field select,
+.appointment-field textarea {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #e5e0d5;
+  border-radius: 6px;
+
+  background: #fdfcfa;
+
+  outline: none;
+
+  font-size: 11px;
+  color: #333;
+
+  transition: 0.3s ease;
+}
+
+.appointment-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.appointment-field input::placeholder,
+.appointment-field textarea::placeholder {
+  color: #aaa;
+}
+
+.appointment-field input:focus,
+.appointment-field select:focus,
+.appointment-field textarea:focus {
+  border-color: #c79a2e;
+  background: #ffffff;
+}
+
+
+/* BUTTON */
+
+.appointment-submit {
+  margin-top: 3px;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 13px 20px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #c79a2e;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.appointment-submit:hover {
+  background: #a97d18;
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .appointment-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .appointment-info {
+    padding-right: 0;
+  }
+
+  .appointment-info h2 {
+    font-size: 36px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .appointment-section {
+    padding: 65px 0;
+  }
+
+  .appointment-container {
+    width: 90%;
+  }
+
+  .appointment-info h2 {
+    font-size: 30px;
+  }
+
+  .appointment-form-card {
+    padding: 23px 18px;
+  }
+
+  .appointment-form-row {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .appointment-call-box {
+    width: 100%;
+  }
+
+}
+
+/* =====================================================
+   SUCCESS POPUP OVERLAY
+===================================================== */
+
+.appointment-success-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(20, 20, 20, 0.58);
+
+  backdrop-filter: blur(5px);
+
+  animation: appointmentOverlayIn 0.25s ease;
+}
+
+
+/* =====================================================
+   SUCCESS MODAL
+===================================================== */
+
+.appointment-success-modal {
+  position: relative;
+
+  width: min(100%, 430px);
+
+  padding: 38px 34px 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #eee5d5;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.18);
+
+  animation: appointmentModalIn 0.35s ease;
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.appointment-success-close {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #eee5d5;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  color: #777;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.appointment-success-close:hover {
+  background: #f7efdc;
+
+  color: #c79a2e;
+
+  border-color: #dfcfaa;
+}
+
+
+/* =====================================================
+   SUCCESS ICON
+===================================================== */
+
+.appointment-success-icon {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #f7efdc;
+
+  color: #c79a2e;
+
+  border: 1px solid #ead7a8;
+
+  animation: appointmentIconIn 0.45s ease;
+}
+
+
+.appointment-success-icon svg {
+  stroke-width: 1.7;
+}
+
+
+/* =====================================================
+   SMALL TITLE
+===================================================== */
+
+.appointment-success-small {
+  margin: 0 0 9px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c79a2e;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.appointment-success-modal h3 {
+  margin: 0 0 15px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 27px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+
+.appointment-success-modal h3 span {
+  display: block;
+
+  color: #c79a2e;
+
+  font-size: 0.72em;
+
+  margin-top: 3px;
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.appointment-success-message {
+  max-width: 340px;
+
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9.5px;
+
+  line-height: 1.85;
+
+  color: #777;
+}
+
+
+/* =====================================================
+   DONE BUTTON
+===================================================== */
+
+.appointment-success-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 25px;
+
+  padding: 11px 23px;
+
+  border: none;
+
+  border-radius: 24px;
+
+  background: #c79a2e;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.appointment-success-button:hover {
+  background: #a97d18;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(199, 154, 46, 0.24);
+}
+
+
+.appointment-success-button svg {
+  transition: transform 0.3s ease;
+}
+
+
+.appointment-success-button:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes appointmentOverlayIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes appointmentModalIn {
+
+  from {
+    opacity: 0;
+
+    transform: translateY(20px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+@keyframes appointmentIconIn {
+
+  from {
+    opacity: 0;
+
+    transform: scale(0.7);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .appointment-success-overlay {
+    padding: 16px;
+  }
+
+  .appointment-success-modal {
+    padding: 34px 23px 27px;
+
+    border-radius: 10px;
+  }
+
+  .appointment-success-icon {
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 17px;
+  }
+
+  .appointment-success-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .appointment-success-modal h3 {
+    font-size: 24px;
+  }
+
+  .appointment-success-message {
+    font-size: 9px;
+
+    line-height: 1.8;
+  }
+
+  .appointment-success-button {
+    width: 100%;
+
+    padding: 11px 18px;
+
+    font-size: 8.5px;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .appointment-success-modal {
+    padding: 30px 18px 24px;
+  }
+
+  .appointment-success-modal h3 {
+    font-size: 22px;
+  }
+
+  .appointment-success-message {
+    font-size: 8.5px;
+  }
+
+}

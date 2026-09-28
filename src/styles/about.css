@@ -1,0 +1,345 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+  width: 100%;
+
+  background: #ffffff;
+
+  padding: 100px 0;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.about-container {
+  width: 90%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.95fr 1.05fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.about-image-area {
+  position: relative;
+
+  height: 470px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.about-image-frame {
+  position: relative;
+
+  z-index: 2;
+
+  width: 90%;
+
+  height: 430px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  border: 6px solid #ffffff;
+
+  box-shadow:
+    0 20px 45px rgba(40, 30, 10, 0.14);
+}
+
+.about-image-frame img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.about-image-frame:hover img {
+  transform: scale(1.04);
+}
+
+
+/* Gold decoration */
+
+.about-image-accent {
+  position: absolute;
+
+  z-index: 1;
+
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  background: #e9e6c8;
+
+  left: 0;
+
+  bottom: 0;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+  max-width: 560px;
+}
+
+.about-small-title {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c79a2e;
+
+  margin-bottom: 15px;
+}
+
+
+.about-content h2 {
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(35px, 4vw, 52px);
+
+  line-height: 1.15;
+
+  font-weight: 600;
+
+  color: #1f1f1f;
+
+  margin-bottom: 20px;
+}
+
+.about-content h2 span {
+  display: block;
+
+  color: #c79a2e;
+
+  font-size: 0.72em;
+
+  margin-top: 7px;
+}
+
+
+.about-description {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.9;
+
+  color: #666;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.about-features {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px 25px;
+
+  margin-bottom: 30px;
+}
+
+.about-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.about-check {
+  width: 26px;
+
+  height: 26px;
+
+  min-width: 26px;
+
+  border-radius: 50%;
+
+  background: #f4efd9;
+
+  color: #c79a2e;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.about-feature span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  color: #3a3a3a;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.about-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background: #c79a2e;
+
+  color: #ffffff;
+
+  padding: 12px 20px;
+
+  border-radius: 25px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.about-button:hover {
+  background: #a97d18;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .about-content {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .about-image-area {
+    max-width: 600px;
+
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .about-features {
+    text-align: left;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-container {
+    width: 90%;
+
+    gap: 35px;
+  }
+
+  .about-image-area {
+    height: 330px;
+  }
+
+  .about-image-frame {
+    width: 92%;
+
+    height: 300px;
+
+    border-radius: 16px;
+  }
+
+  .about-image-accent {
+    width: 90px;
+
+    height: 90px;
+  }
+
+  .about-content h2 {
+    font-size: 35px;
+  }
+
+  .about-description {
+    font-size: 12px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .about-feature {
+    justify-content: flex-start;
+  }
+}

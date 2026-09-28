@@ -1,0 +1,149 @@
+.stats-section {
+  width: 100%;
+  padding: 28px 0;
+  background: #ffffff;
+  border-top: 1px solid #eee8dc;
+  border-bottom: 1px solid #eee8dc;
+}
+
+.stats-container {
+  width: min(88%, 1080px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  padding: 10px 25px;
+
+  border-right: 1px solid #eee8dc;
+}
+
+.stat-card:last-child {
+  border-right: none;
+}
+
+.stat-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #f7efdc;
+  color: #c79a2e;
+
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+  background: #c79a2e;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.stat-content h3 {
+  margin: 0 0 3px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.stat-content p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #888;
+}
+
+/* Tablet */
+@media (max-width: 750px) {
+  .stats-section {
+    padding: 24px 0;
+  }
+
+  .stats-container {
+    width: 90%;
+  }
+
+  .stat-card {
+    padding: 8px 14px;
+    gap: 10px;
+  }
+
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stat-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .stat-content h3 {
+    font-size: 21px;
+  }
+
+  .stat-content p {
+    font-size: 7.5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .stats-section {
+    padding: 20px 0;
+  }
+
+  .stats-container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .stat-card {
+    justify-content: flex-start;
+    padding: 15px 10px;
+    border-right: none;
+    border-bottom: 1px solid #eee8dc;
+  }
+
+  .stat-card:last-child {
+    border-bottom: none;
+  }
+
+  .stat-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stat-content h3 {
+    font-size: 22px;
+  }
+
+  .stat-content p {
+    font-size: 8px;
+  }
+}

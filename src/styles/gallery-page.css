@@ -1,0 +1,1242 @@
+/* =========================================
+   GALLERY PAGE
+========================================= */
+
+.gallery-page {
+  width: 100%;
+  background: #fdf8f8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.gallery-page-hero {
+  width: 100%;
+  padding: 85px 0 80px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #fdf8f8 0%,
+      #fdf8f8 52%,
+      #f7efdc 100%
+    );
+}
+
+.gallery-page-hero-container {
+  width: min(90%, 1180px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 55px;
+  align-items: center;
+}
+
+.gallery-page-hero-content {
+  max-width: 480px;
+}
+
+.gallery-page-label {
+  margin-bottom: 13px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+
+  color: #c79a2e;
+}
+
+.gallery-page-hero-content h1 {
+  margin: 0 0 18px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 43px;
+  line-height: 1.15;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.gallery-page-hero-content h1 span {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 0.7em;
+
+  color: #c79a2e;
+}
+
+.gallery-page-hero-content > p {
+  max-width: 450px;
+
+  margin: 0 0 25px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 1.9;
+
+  color: #777;
+}
+
+.gallery-page-hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 21px;
+
+  border-radius: 24px;
+
+  background: #c79a2e;
+  color: #ffffff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.gallery-page-hero-button:hover {
+  background: #a97d18;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(199, 154, 46, 0.2);
+}
+
+.gallery-page-hero-button svg {
+  transition: transform 0.3s ease;
+}
+
+.gallery-page-hero-button:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.gallery-page-hero-image {
+  position: relative;
+
+  height: 390px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eee5d5;
+  border-radius: 10px;
+
+  box-shadow: 0 12px 35px rgba(31, 31, 31, 0.07);
+}
+
+.gallery-page-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 0.5s ease;
+}
+
+.gallery-page-hero-image:hover img {
+  transform: scale(1.02);
+}
+
+.gallery-page-hero-badge {
+  position: absolute;
+
+  left: 20px;
+  bottom: 20px;
+
+  padding: 12px 17px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid #ead7a8;
+  border-radius: 7px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-page-hero-badge strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+
+  color: #1f1f1f;
+}
+
+.gallery-page-hero-badge span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.5px;
+
+  color: #888;
+}
+
+
+/* =========================================
+   GALLERY SECTION
+========================================= */
+
+.gallery-page-section {
+  padding: 90px 0 100px;
+
+  background: #ffffff;
+}
+
+.gallery-page-container {
+  width: min(90%, 1180px);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.gallery-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 35px;
+}
+
+.gallery-page-small-title {
+  margin-bottom: 11px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+
+  color: #c79a2e;
+}
+
+.gallery-page-header h2 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 37px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.gallery-page-header h2 span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 0.72em;
+
+  color: #c79a2e;
+}
+
+.gallery-page-header > p {
+  width: 390px;
+
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9.5px;
+  line-height: 1.9;
+
+  color: #777;
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.gallery-page-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-bottom: 38px;
+}
+
+.gallery-page-filters button {
+  padding: 9px 17px;
+
+  border: 1px solid #e6dfd1;
+  border-radius: 20px;
+
+  background: #ffffff;
+  color: #777;
+
+  cursor: pointer;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.gallery-page-filters button:hover {
+  border-color: #c79a2e;
+  color: #c79a2e;
+}
+
+.gallery-page-filters button.active {
+  background: #c79a2e;
+  border-color: #c79a2e;
+
+  color: #ffffff;
+
+  box-shadow: 0 6px 15px rgba(199, 154, 46, 0.16);
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.gallery-page-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.gallery-page-card {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eee5d5;
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(31, 31, 31, 0.045);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.gallery-page-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #dfcfaa;
+
+  box-shadow: 0 18px 38px rgba(31, 31, 31, 0.09);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.gallery-page-image {
+  position: relative;
+
+  width: 100%;
+  height: 275px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #fafafa;
+
+  border-bottom: 1px solid #eee8dc;
+}
+
+.gallery-page-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 0.5s ease;
+}
+
+.gallery-page-card:hover .gallery-page-image img {
+  transform: scale(1.025);
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.gallery-page-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 18px;
+
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 20, 0.72),
+    rgba(20, 20, 20, 0.05) 65%
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.gallery-page-card:hover .gallery-page-overlay {
+  opacity: 1;
+}
+
+.gallery-page-overlay span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+
+  color: #e8d39b;
+}
+
+.gallery-page-overlay h3 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   EXPAND
+========================================= */
+
+.gallery-page-expand {
+  width: 39px;
+  height: 39px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #c79a2e;
+
+  transform: translateY(8px);
+
+  transition: transform 0.3s ease;
+}
+
+.gallery-page-card:hover .gallery-page-expand {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.gallery-page-number {
+  position: absolute;
+
+  top: 13px;
+  right: 13px;
+
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+
+  color: #c79a2e;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.gallery-page-card-content {
+  min-height: 145px;
+
+  padding: 20px 21px 22px;
+}
+
+.gallery-page-category {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+  color: #c79a2e;
+}
+
+.gallery-page-card-content h3 {
+  margin: 0 0 8px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.gallery-page-card-content p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  line-height: 1.75;
+
+  color: #777;
+}
+
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.gallery-page-experience {
+  padding: 90px 0;
+
+  background: #fdf8f8;
+}
+
+.gallery-page-experience-container {
+  width: min(90%, 1100px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+.gallery-page-experience-image {
+  height: 390px;
+
+  overflow: hidden;
+
+  border-radius: 9px;
+
+  border: 1px solid #eee5d5;
+}
+
+.gallery-page-experience-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.gallery-page-experience-content {
+  max-width: 500px;
+}
+
+.gallery-page-experience-content h2 {
+  margin: 0 0 17px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.gallery-page-experience-content h2 span {
+  display: block;
+
+  color: #c79a2e;
+}
+
+.gallery-page-experience-content > p {
+  margin: 0 0 25px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9.5px;
+  line-height: 1.9;
+
+  color: #777;
+}
+
+
+/* =========================================
+   POINTS
+========================================= */
+
+.gallery-page-points {
+  display: flex;
+  flex-direction: column;
+
+  gap: 13px;
+
+  margin-bottom: 27px;
+}
+
+.gallery-page-points > div {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+}
+
+.gallery-page-points span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #f7efdc;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+
+  color: #c79a2e;
+}
+
+.gallery-page-points p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+
+  color: #666;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.gallery-page-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 21px;
+
+  border-radius: 24px;
+
+  background: #c79a2e;
+  color: #ffffff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.gallery-page-button:hover {
+  background: #a97d18;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.gallery-page-cta {
+  padding: 55px 0;
+
+  background: #1f1f1f;
+}
+
+.gallery-page-cta-container {
+  width: min(90%, 1100px);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 35px;
+}
+
+.gallery-page-cta-container > div p {
+  margin: 0 0 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #c79a2e;
+}
+
+.gallery-page-cta-container h2 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+.gallery-page-cta-container h2 span {
+  color: #c79a2e;
+}
+
+.gallery-page-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  padding: 12px 22px;
+
+  border-radius: 24px;
+
+  background: #c79a2e;
+  color: #ffffff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.gallery-page-cta-button:hover {
+  background: #a97d18;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   LIGHTBOX
+========================================= */
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 35px 70px;
+
+  background: rgba(15, 15, 15, 0.92);
+
+  backdrop-filter: blur(7px);
+}
+
+
+/* =========================================
+   LIGHTBOX CONTENT
+========================================= */
+
+.gallery-lightbox-content {
+  width: min(850px, 85vw);
+  max-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-lightbox-content img {
+  width: 100%;
+  max-height: 70vh;
+
+  object-fit: contain;
+
+  background: #fafafa;
+}
+
+.gallery-lightbox-info {
+  width: 100%;
+
+  padding: 17px 22px 19px;
+
+  background: #ffffff;
+}
+
+.gallery-lightbox-info span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #c79a2e;
+}
+
+.gallery-lightbox-info h3 {
+  margin: 0 0 5px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+
+  color: #1f1f1f;
+}
+
+.gallery-lightbox-info p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8.5px;
+  line-height: 1.6;
+
+  color: #777;
+}
+
+
+/* =========================================
+   LIGHTBOX CLOSE
+========================================= */
+
+.gallery-lightbox-close {
+  position: absolute;
+
+  top: 20px;
+  right: 22px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.gallery-lightbox-close:hover {
+  background: #c79a2e;
+  border-color: #c79a2e;
+}
+
+
+/* =========================================
+   PREVIOUS / NEXT
+========================================= */
+
+.gallery-lightbox-prev,
+.gallery-lightbox-next {
+  position: absolute;
+
+  top: 50%;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #c79a2e;
+
+  cursor: pointer;
+
+  transform: translateY(-50%);
+
+  transition: all 0.3s ease;
+}
+
+.gallery-lightbox-prev {
+  left: 20px;
+}
+
+.gallery-lightbox-next {
+  right: 20px;
+}
+
+.gallery-lightbox-prev:hover,
+.gallery-lightbox-next:hover {
+  background: #c79a2e;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .gallery-page-hero {
+    padding: 75px 0;
+  }
+
+  .gallery-page-hero-container {
+    gap: 35px;
+  }
+
+  .gallery-page-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .gallery-page-hero-image {
+    height: 330px;
+  }
+
+  .gallery-page-grid {
+    gap: 20px;
+  }
+
+  .gallery-page-image {
+    height: 240px;
+  }
+
+  .gallery-page-experience-container {
+    gap: 40px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 750px) {
+
+  .gallery-page-hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .gallery-page-hero-content {
+    max-width: 600px;
+
+    text-align: center;
+
+    margin: 0 auto;
+  }
+
+  .gallery-page-hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-page-hero-image {
+    height: 350px;
+  }
+
+  .gallery-page-header {
+    display: block;
+  }
+
+  .gallery-page-header > p {
+    width: 100%;
+    max-width: 600px;
+
+    margin-top: 18px;
+  }
+
+  .gallery-page-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-page-experience-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-page-experience-content {
+    max-width: 650px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .gallery-page-hero {
+    padding: 60px 0 65px;
+  }
+
+  .gallery-page-container {
+    width: 90%;
+  }
+
+  .gallery-page-hero-container {
+    width: 90%;
+  }
+
+  .gallery-page-label {
+    font-size: 7.5px;
+    letter-spacing: 1.8px;
+  }
+
+  .gallery-page-hero-content h1 {
+    font-size: 29px;
+  }
+
+  .gallery-page-hero-content > p {
+    font-size: 9px;
+    line-height: 1.8;
+  }
+
+  .gallery-page-hero-image {
+    height: 280px;
+  }
+
+  .gallery-page-hero-badge {
+    left: 13px;
+    bottom: 13px;
+  }
+
+  .gallery-page-section {
+    padding: 65px 0 70px;
+  }
+
+  .gallery-page-small-title {
+    font-size: 7px;
+    letter-spacing: 1.7px;
+  }
+
+  .gallery-page-header h2 {
+    font-size: 29px;
+  }
+
+  .gallery-page-header > p {
+    font-size: 9px;
+    line-height: 1.8;
+  }
+
+  .gallery-page-filters {
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .gallery-page-filters button {
+    padding: 8px 14px;
+
+    font-size: 7.5px;
+  }
+
+  .gallery-page-grid {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+  }
+
+  .gallery-page-image {
+    height: 250px;
+  }
+
+  .gallery-page-card-content {
+    min-height: auto;
+
+    padding: 18px 18px 20px;
+  }
+
+  .gallery-page-card-content h3 {
+    font-size: 15px;
+  }
+
+  .gallery-page-card-content p {
+    font-size: 8.5px;
+  }
+
+  .gallery-page-experience {
+    padding: 65px 0;
+  }
+
+  .gallery-page-experience-image {
+    height: 270px;
+  }
+
+  .gallery-page-experience-content h2 {
+    font-size: 29px;
+  }
+
+  .gallery-page-experience-content > p {
+    font-size: 9px;
+  }
+
+  .gallery-page-cta {
+    padding: 45px 0;
+  }
+
+  .gallery-page-cta-container {
+    display: block;
+  }
+
+  .gallery-page-cta-container h2 {
+    font-size: 24px;
+  }
+
+  .gallery-page-cta-button {
+    width: 100%;
+
+    margin-top: 22px;
+  }
+
+  .gallery-lightbox {
+    padding: 55px 12px 20px;
+  }
+
+  .gallery-lightbox-content {
+    width: 100%;
+    max-height: 82vh;
+  }
+
+  .gallery-lightbox-content img {
+    max-height: 62vh;
+  }
+
+  .gallery-lightbox-close {
+    top: 10px;
+    right: 12px;
+
+    width: 37px;
+    height: 37px;
+  }
+
+  .gallery-lightbox-prev,
+  .gallery-lightbox-next {
+    width: 37px;
+    height: 37px;
+  }
+
+  .gallery-lightbox-prev {
+    left: 8px;
+  }
+
+  .gallery-lightbox-next {
+    right: 8px;
+  }
+
+  .gallery-lightbox-info {
+    padding: 14px 17px 16px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .gallery-page-hero-content h1 {
+    font-size: 26px;
+  }
+
+  .gallery-page-hero-image {
+    height: 245px;
+  }
+
+  .gallery-page-header h2 {
+    font-size: 26px;
+  }
+
+  .gallery-page-image {
+    height: 225px;
+  }
+
+}

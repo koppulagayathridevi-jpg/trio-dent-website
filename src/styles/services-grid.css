@@ -1,0 +1,629 @@
+/* =========================================================
+   SERVICES GRID — COMPACT VERSION
+========================================================= */
+
+.services-grid-section {
+  width: 100%;
+  padding: 65px 20px 75px;
+  background: #fdf8f8;
+  overflow: hidden;
+}
+
+.services-grid-container {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.services-grid-heading {
+  max-width: 650px;
+  margin: 0 auto 38px;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(25px);
+
+  animation: servicesHeadingReveal 0.8s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    forwards;
+}
+
+.services-grid-eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: #c79a2e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.services-grid-heading h2 {
+  margin: 0;
+
+  color: #171717;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(28px, 3.5vw, 38px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.services-grid-heading h2 span {
+  color: #c79a2e;
+}
+
+.services-grid-heading p {
+  max-width: 580px;
+  margin: 10px auto 0;
+
+  color: #686868;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.service-card {
+  position: relative;
+
+  min-height: 285px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 22px 18px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #c79a2e;
+  border-radius: 17px;
+
+  overflow: hidden;
+  text-align: center;
+
+  opacity: 0;
+
+  transform:
+    translateY(30px)
+    scale(0.97);
+
+  animation:
+    serviceCardReveal 0.65s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    var(--card-delay)
+    forwards;
+
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease,
+    border-color 0.3s ease;
+}
+
+/* =========================================================
+   TOP GOLD LINE
+========================================================= */
+
+.service-card-top-line {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 0;
+  height: 3px;
+
+  background: #c79a2e;
+
+  transform: translateX(-50%);
+
+  transition:
+    width 0.4s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-card:hover .service-card-top-line {
+  width: 100%;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.service-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 14px 30px rgba(45, 32, 15, 0.09),
+    0 4px 12px rgba(199, 154, 46, 0.08);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.service-card-icon {
+  position: relative;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2px;
+
+  color: #b88625;
+
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.3s ease;
+}
+
+.service-card-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+/* Icon circle */
+
+.service-card-icon::before {
+  content: "";
+
+  position: absolute;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  background: rgba(199, 154, 46, 0.06);
+
+  opacity: 0;
+
+  transform: scale(0.6);
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.service-card:hover .service-card-icon {
+  color: #c79a2e;
+
+  transform:
+    translateY(-4px)
+    scale(1.06);
+}
+
+.service-card:hover .service-card-icon::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =========================================================
+   ICON FLOAT
+========================================================= */
+
+.service-card:hover .service-card-icon svg {
+  animation: serviceIconFloat 1.5s ease-in-out infinite;
+}
+
+@keyframes serviceIconFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.service-card-number,
+.service-number {
+  position: absolute;
+
+  top: 11px;
+  right: 13px;
+
+  color: rgba(199, 154, 46, 0.25);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-card:hover .service-card-number,
+.service-card:hover .service-number {
+  color: rgba(199, 154, 46, 0.65);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.service-card-content {
+  position: relative;
+  z-index: 2;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.service-card-content h3 {
+  max-width: 240px;
+
+  margin: 9px 0 7px;
+
+  color: #151515;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-card:hover .service-card-content h3 {
+  color: #b88625;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.service-card-content p {
+  max-width: 235px;
+
+  margin: 0;
+
+  color: #303030;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .service-card-content p {
+  color: #505050;
+}
+
+/* =========================================================
+   LEARN MORE
+========================================================= */
+
+.service-card-link {
+  position: relative;
+  z-index: 3;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 13px;
+  padding: 5px 2px;
+
+  border: none;
+
+  color: #b17e16;
+  background: transparent;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.service-card-link svg {
+  width: 16px;
+  height: 16px;
+
+  transition:
+    transform 0.3s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-card-link:hover {
+  color: #8e640e;
+  gap: 10px;
+}
+
+.service-card-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   UNDERLINE
+========================================================= */
+
+.service-card-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: #c79a2e;
+
+  transition: width 0.3s ease;
+}
+
+.service-card-link:hover::after {
+  width: 100%;
+}
+
+/* =========================================================
+   GOLD GLOW
+========================================================= */
+
+.service-card-glow {
+  position: absolute;
+
+  left: 50%;
+  bottom: -55px;
+
+  width: 140px;
+  height: 80px;
+
+  border-radius: 50%;
+
+  background: rgba(199, 154, 46, 0.08);
+
+  filter: blur(22px);
+
+  opacity: 0;
+
+  transform:
+    translateX(-50%)
+    scale(0.6);
+
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.service-card:hover .service-card-glow {
+  opacity: 1;
+
+  transform:
+    translateX(-50%)
+    scale(1);
+}
+
+/* =========================================================
+   ENTRANCE ANIMATIONS
+========================================================= */
+
+@keyframes servicesHeadingReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes serviceCardReveal {
+  0% {
+    opacity: 0;
+
+    transform:
+      translateY(30px)
+      scale(0.97);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .services-grid-container {
+    width: min(100%, 850px);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .service-card {
+    min-height: 285px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .services-grid-section {
+    padding: 55px 14px 65px;
+  }
+
+  .services-grid-heading {
+    margin-bottom: 30px;
+  }
+
+  .services-grid-heading h2 {
+    font-size: 28px;
+  }
+
+  .services-grid-heading p {
+    font-size: 12px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .service-card {
+    min-height: 255px;
+
+    padding:
+      20px
+      10px
+      16px;
+
+    border-radius: 14px;
+  }
+
+  .service-card-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .service-card-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .service-card-icon::before {
+    width: 49px;
+    height: 49px;
+  }
+
+  .service-card-content h3 {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+
+  .service-card-content p {
+    font-size: 10.5px;
+    line-height: 1.55;
+  }
+
+  .service-card-link {
+    font-size: 10.5px;
+    margin-top: 10px;
+  }
+
+  .service-card-link svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .service-card {
+    min-height: 235px;
+  }
+
+  .service-card-content h3 {
+    font-size: 16px;
+  }
+
+  .service-card-content p {
+    max-width: 270px;
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .services-grid-heading,
+  .service-card {
+    animation: none;
+
+    opacity: 1;
+    transform: none;
+  }
+
+  .service-card,
+  .service-card-icon,
+  .service-card-icon svg,
+  .service-card-link,
+  .service-card-glow,
+  .service-card-top-line {
+    animation: none;
+    transition: none;
+  }
+}

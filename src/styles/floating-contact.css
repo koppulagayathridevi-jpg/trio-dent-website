@@ -34,7 +34,7 @@
   border: 6px solid #eadfc5;
   border-radius: 50%;
 
-  background: white;
+  background: #ffffff;
 
   display: flex;
   align-items: center;
@@ -72,24 +72,22 @@
 ========================================================= */
 
 .combined-contact-icons {
+  position: relative;
+
   width: 48px;
   height: 48px;
 
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-
-  gap: 2px;
-
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 
   border-radius: 50%;
 
-  overflow: hidden;
-
-  animation: combinedPulse 2.5s ease-in-out infinite;
+  /*
+     Only the icons rotate.
+     The main button stays fixed.
+  */
+  animation: rotateContactIcons 6s linear infinite;
 }
 
 
@@ -98,6 +96,8 @@
 ========================================================= */
 
 .combined-icon {
+  position: absolute;
+
   width: 22px;
   height: 22px;
 
@@ -111,14 +111,15 @@
 
   font-size: 13px;
 
-  transition: transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 
 /* =========================================================
-   INSTAGRAM ICON
+   ICON POSITIONS
 ========================================================= */
 
+/* Instagram - Top Left */
 .instagram-icon {
   background: linear-gradient(
     135deg,
@@ -126,33 +127,32 @@
     #fd1d1d,
     #fcb045
   );
+
+  transform: translate(-11px, -11px);
 }
 
 
-/* =========================================================
-   WHATSAPP ICON
-========================================================= */
-
+/* WhatsApp - Top Right */
 .whatsapp-icon {
   background: #25d366;
+
+  transform: translate(11px, -11px);
 }
 
 
-/* =========================================================
-   CALL ICON
-========================================================= */
-
+/* Call - Bottom Left */
 .call-icon {
   background: #b88916;
+
+  transform: translate(-11px, 11px);
 }
 
 
-/* =========================================================
-   LOCATION ICON
-========================================================= */
-
+/* Location - Bottom Right */
 .location-icon {
   background: #555555;
+
+  transform: translate(11px, 11px);
 }
 
 
@@ -169,20 +169,17 @@
 
 
 /* =========================================================
-   COMBINED ICON ANIMATION
+   ROTATING ICON ANIMATION
 ========================================================= */
 
-@keyframes combinedPulse {
-
-  0%,
-  100% {
-    transform: scale(1);
+@keyframes rotateContactIcons {
+  from {
+    transform: rotate(0deg);
   }
 
-  50% {
-    transform: scale(1.06);
+  to {
+    transform: rotate(360deg);
   }
-
 }
 
 
@@ -191,16 +188,16 @@
 ========================================================= */
 
 .main-close-icon {
-  color: #ffffff;
+  color: #b88916;
 
   stroke-width: 2.5;
 
-  transition: transform 0.3s ease;
+  transition:
+    transform 0.3s ease;
 }
 
 
-/* Rotate close icon */
-
+/* Rotate close icon slightly */
 .floating-contact.open .main-close-icon {
   transform: rotate(90deg);
 }
@@ -301,7 +298,7 @@
 
 
 /* =========================================================
-   INSTAGRAM
+   INSTAGRAM BUTTON
 ========================================================= */
 
 .floating-button.instagram {
@@ -315,7 +312,7 @@
 
 
 /* =========================================================
-   WHATSAPP
+   WHATSAPP BUTTON
 ========================================================= */
 
 .floating-button.whatsapp {
@@ -324,7 +321,7 @@
 
 
 /* =========================================================
-   CALL
+   CALL BUTTON
 ========================================================= */
 
 .floating-button.call {
@@ -333,7 +330,7 @@
 
 
 /* =========================================================
-   LOCATION
+   LOCATION BUTTON
 ========================================================= */
 
 .floating-button.location {
@@ -342,88 +339,11 @@
 
 
 /* =========================================================
-   CONTACT ICONS
+   CONTACT BUTTON ICONS
 ========================================================= */
 
 .floating-button svg {
   flex-shrink: 0;
-}
-
-
-/* =========================================================
-   HINT MESSAGE
-========================================================= */
-
-.floating-hint {
-  position: absolute;
-
-  right: 82px;
-  bottom: 18px;
-
-  padding: 9px 16px;
-
-  background: #ffffff;
-
-  color: #765600;
-
-  border-radius: 22px;
-
-  font-size: 13px;
-  font-weight: 600;
-
-  white-space: nowrap;
-
-  box-shadow:
-    0 5px 20px rgba(0, 0, 0, 0.15);
-
-  z-index: 10;
-
-  animation: floatingHint 2.2s ease-in-out infinite;
-}
-
-
-/* =========================================================
-   HINT ARROW
-========================================================= */
-
-.floating-hint::after {
-  content: "";
-
-  position: absolute;
-
-  right: -7px;
-  top: 50%;
-
-  width: 14px;
-  height: 14px;
-
-  background: #ffffff;
-
-  transform:
-    translateY(-50%)
-    rotate(45deg);
-
-  border-radius: 2px;
-
-  z-index: -1;
-}
-
-
-/* =========================================================
-   HINT ANIMATION
-========================================================= */
-
-@keyframes floatingHint {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-5px);
-  }
-
 }
 
 
@@ -485,17 +405,6 @@
     font-size: 13px;
   }
 
-
-  .floating-hint {
-    right: 73px;
-
-    bottom: 14px;
-
-    padding: 8px 13px;
-
-    font-size: 12px;
-  }
-
 }
 
 
@@ -531,6 +440,12 @@
   }
 
 
+  .combined-icon svg {
+    width: 11px;
+    height: 11px;
+  }
+
+
   .floating-contact-options {
     bottom: 71px;
   }
@@ -542,17 +457,6 @@
     height: 42px;
 
     font-size: 12px;
-  }
-
-
-  .floating-hint {
-    right: 70px;
-
-    bottom: 14px;
-
-    padding: 8px 12px;
-
-    font-size: 11px;
   }
 
 }
@@ -588,12 +492,14 @@
   }
 
 
-  .floating-hint {
-    right: 66px;
+  .combined-icon svg {
+    width: 10px;
+    height: 10px;
+  }
 
-    padding: 7px 10px;
 
-    font-size: 10px;
+  .floating-contact-options {
+    bottom: 68px;
   }
 
 
@@ -615,4 +521,23 @@
   outline: 3px solid rgba(201, 154, 39, 0.45);
 
   outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .combined-contact-icons {
+    animation: none;
+  }
+
+  .floating-main-button,
+  .floating-button,
+  .main-close-icon {
+    transition: none;
+  }
+
 }
